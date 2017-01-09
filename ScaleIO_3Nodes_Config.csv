@@ -1,0 +1,4 @@
+Domain,Username,Password,Operating System,Is MDM/TB,MDM Mgmt IP,MDM IPs,MDM Name,perfProfileForMDM,Is SDS,SDS Name,SDS All IPs,SDS-SDS Only IPs,SDS-SDC Only IPs,Protection Domain,Fault Set,SDS Device List,StoragePool List,SDS Device Names,RFCache,RFCache Device List,RFCache Pool List,perfProfileForSDS,Is SDC,perfProfileForSDC,SDC Name
+,root,vagrant,linux,TB,,192.168.33.11,tb,No,Yes,tb,192.168.33.11,,,pdomain1,,/dev/sdb,pool1,,No,,,No,Yes,No,tb
+,root,vagrant,linux,Master,,192.168.33.12,mdm1,No,Yes,mdm1,192.168.33.12,,,pdomain1,,/dev/sdb,pool1,,No,,,No,Yes,No,mdm1
+,root,vagrant,linux,Slave,,192.168.33.13,mdm2,No,Yes,mdm2,192.168.33.13,,,pdomain1,,/dev/sdb,pool1,,No,,,No,Yes,No,mdm2
