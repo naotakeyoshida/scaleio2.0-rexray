@@ -12,7 +12,7 @@ else
 
   ## Install bash-completion
   sudo yum install bash-completion -y
-  echo "`date` bash-completion installed " >> $instlog
+  echo "`date` bash-completion was installed " >> $instlog
   echo "================================================"
   echo "======== Installation for MDM complete! ========"
   echo "================================================"
