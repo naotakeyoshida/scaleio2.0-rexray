@@ -9,8 +9,6 @@ else
   set -e
   trap 'echo Error!!' ERR
 
-  ## Install common packages
-  sh /vagrant/scripts/common.sh
 
   ## Install bash-completion
   sudo yum install bash-completion -y
