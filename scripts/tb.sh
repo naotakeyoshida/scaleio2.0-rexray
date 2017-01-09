@@ -20,7 +20,7 @@ else
         "http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jre-8u60-linux-x64.rpm" -a /home/vagrant/wget.log
   fi
   sudo yum localinstall jre-8u60-linux-x64.rpm -y
-  echo "`date` Java 1.8 installed " >> $instlog
+  echo "`date` Java 1.8 was installed " >> $instlog
 
   ## Install ScaleIO
   #cd /vagrant
@@ -46,7 +46,7 @@ else
   echo "ScaleIO Version : $version"
   gwrpm=`find /vagrant -name *gateway*.rpm`
   GATEWAY_ADMIN_PASSWORD=Password123! rpm -i $gwrpm --nodeps
-  echo "`date` ScaleIO GW-IM installed " >> $instlog
+  echo "`date` ScaleIO GW-IM was installed " >> $instlog
   echo "================================================="
   echo "====== Installation for TB complete!       ======"
   echo "====== You can access ScaleIO IM from host ======" 
