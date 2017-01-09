@@ -9,9 +9,6 @@ else
   set -e
   trap 'echo Error!!' ERR
 
-  ## Run common script
-  sudo sh /vagrant/scripts/common.sh
-
   ## Install Java 1.8
   cd /vagrant 
   if [ -e "/vagrant/jre-8u60-linux-x64.rpm" ]; then
