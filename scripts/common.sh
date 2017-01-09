@@ -15,8 +15,8 @@ echo "`date` Stopped and disabled firewall service " >> $instlog
 cd /etc/yum.repos.d/
 sudo wget http://download.opensuse.org/repositories/Virtualization:Appliances/CentOS_CentOS-6/Virtualization:Appliances.repo
 cd /home/vagrant
-echo "`date` yum repo added" >> $instlog
+echo "`date` yum repo was added" >> $instlog
 
 ## Install required packages
 sudo yum install unzip numactl libaio wget openssl openldap hwinfo pciutils ethtool -y
-echo "`date` required packages inlstalled " >> $instlog
+echo "`date` required packages ware inlstalled " >> $instlog
