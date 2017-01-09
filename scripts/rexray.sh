@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 instlog="/home/vagrant/install.log"
 
