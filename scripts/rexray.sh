@@ -11,14 +11,14 @@ enabled=1
 gpgcheck=1
 gpgkey=https://yum.dockerproject.org/gpg
 EOF
-echo "`date` yum repo for Docker added" >> $instlog
+echo "`date` yum repo for Docker was added" >> $instlog
 yum install -y docker-engine
 sudo systemctl enable docker.service
 sudo groupadd docker
 sudo usermod -aG docker vagrant
 sudo systemctl start docker
 echo "`date` Docker installed " >> $instlog
-echo "Docker installed!"
+echo "Docker installation complete!"
 
 ## Set ScaleIO system name
 pdomain="pdomain1"
@@ -65,7 +65,7 @@ scaleio:
   storagePoolName: $stpool
   thinOrThick: $thin
 EOF
-echo "`date` RexRay installed and configured " >> $instlog
+echo "`date` RexRay was installed and configured " >> $instlog
 sudo service rexray restart
 sudo service rexray status
 sudo service docker restart
