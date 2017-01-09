@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## Check execution 
 test -f /home/vagrant/ok && exit
