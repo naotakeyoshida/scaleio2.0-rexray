@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
           vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev1]
       end
       centos72.vm.provision :shell do |shell|
-              shell.path = "scripts/tb.sh"
+              shell.path = "/bin/bash scripts/tb.sh"
       end 
   end
   config.vm.define "mdm1" do |centos72|
@@ -36,7 +36,7 @@ Vagrant.configure(2) do |config|
 	  vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev2]
       end
       centos72.vm.provision :shell do |shell|
-          shell.path = "scripts/mdm.sh"
+          shell.path = "/bin/bash scripts/mdm.sh"
       end
   end
   config.vm.define "mdm2" do |centos72|
@@ -52,8 +52,8 @@ Vagrant.configure(2) do |config|
 	  vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev3]
       end
       centos72.vm.provision :shell do |shell|
-          shell.path = "scripts/mdm.sh"
+          shell.path = "/bin/bash scripts/mdm.sh"
       end
   end
-  config.vm.provision :shell, path: "scripts/bootstrap.sh"
+  config.vm.provision :shell, path: "/bin/bash scripts/bootstrap.sh"
 end
