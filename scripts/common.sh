@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 10s
 instlog="/home/vagrant/install.log"
 
