@@ -31,12 +31,12 @@ Vagrant.configure(2) do |config|
       centos72.vm.network "private_network", ip: "192.168.33.12"
       centos72.vm.provider "virtualbox" do |vb|
           vb.name = "mdm1"
-	        vb.customize ["modifyvm", :id, "--memory", 1024]
-	        vb.customize ['createhd', '--filename', siodev2, '--size', 100 * 1024]
-	        vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev2]
+	  vb.customize ["modifyvm", :id, "--memory", 1024]
+	  vb.customize ['createhd', '--filename', siodev2, '--size', 100 * 1024]
+	  vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev2]
       end
       centos72.vm.provision :shell do |shell|
-              shell.path = "scripts/mdm.sh"
+          shell.path = "scripts/mdm.sh"
       end
   end
   config.vm.define "mdm2" do |centos72|
@@ -48,8 +48,8 @@ Vagrant.configure(2) do |config|
       centos72.vm.provider "virtualbox" do |vb|
           vb.name = "mdm2"
           vb.customize ["modifyvm", :id, "--memory", 1024]
-	        vb.customize ['createhd', '--filename', siodev3, '--size', 100 * 1024]
-	        vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev3]
+	  vb.customize ['createhd', '--filename', siodev3, '--size', 100 * 1024]
+	  vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', siodev3]
       end
       centos72.vm.provision :shell do |shell|
           shell.path = "scripts/mdm.sh"
