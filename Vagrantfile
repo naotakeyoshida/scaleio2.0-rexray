@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "bento/centos-7.2"
   config.vm.define "tb" do |centos72|
       centos72.vm.hostname = "tb.local"
-      centos72.vm.synced_folder ".", "/vagrant
+      centos72.vm.synced_folder ".", "/vagrant"
       centos72.vm.network "forwarded_port", guest: 22, host: 2221
       centos72.vm.network "forwarded_port", guest: 443, host: 4431
       centos72.vm.network "private_network", ip: "192.168.33.11"
