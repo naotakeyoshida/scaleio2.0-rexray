@@ -1,5 +1,5 @@
 #!/bin/sh
-
+sleep 10s
 instlog="/home/vagrant/install.log"
 
 ## Update
