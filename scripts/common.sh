@@ -19,4 +19,4 @@ echo "`date` yum repo added" >> $instlog
 
 ## Install required packages
 sudo yum install unzip numactl libaio wget openssl openldap hwinfo pciutils ethtool -y
-echo "`` required packages inlstalled " >> $instlog
+echo "`date` required packages inlstalled " >> $instlog
