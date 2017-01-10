@@ -28,13 +28,13 @@ else
       echo "`date` ScaleIO_Linux_v2.0.zip is founded " >> $instlog
   else
       echo "`date` ScaleIO will be downloaded " >> $instlog
-      netbw=`tail -n 2 /home/vagrant/wget.log | sed -n 1p | cut -d " " -f 3 | cut -d "(" -f 2`
-      dltime=`echo "1678 $netbw" | awk '{print $1 / $2}'`
-      dltime2=`echo "$dltime 60" | awk '{print $1 / $2}'`
-      ttdl=`echo "$dltime2 0.5" | awk '{printf("%d", $1 + $2)}'`
+      #netbw=`tail -n 2 /home/vagrant/wget.log | sed -n 1p | cut -d " " -f 3 | cut -d "(" -f 2`
+      #dltime=`echo "1678 $netbw" | awk '{print $1 / $2}'`
+      #dltime2=`echo "$dltime 60" | awk '{print $1 / $2}'`
+      #ttdl=`echo "$dltime2 0.5" | awk '{printf("%d", $1 + $2)}'`
       echo "========== `date` =========="
-      echo "ScaleIO is beeing downloaded. Please wait..."
-      echo "It will take about $ttdl min on your environment."
+      echo "ScaleIO(1.6GB) is beeing downloaded. Please wait..."
+      #echo "It will take about $ttdl min on your environment."
       sudo wget -nv http://downloads.emc.com/emc-com/usa/ScaleIO/ScaleIO_Linux_v2.0.zip
       echo "`date` Download complete " >> $instlog
   fi
