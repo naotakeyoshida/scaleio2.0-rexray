@@ -52,5 +52,5 @@ Vagrant.configure(2) do |config|
       centos72.vm.provision :shell, :path => "scripts/common.sh"
       centos72.vm.provision :shell, :path => "scripts/mdm.sh"
   end
-  config.vm.provision :shell, path: "/bin/bash scripts/bootstrap.sh"
+  config.vm.provision :shell, path: "/scripts/bootstrap.sh"
 end
