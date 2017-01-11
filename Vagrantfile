@@ -11,7 +11,8 @@ Vagrant.configure(2) do |config|
       centos72.vm.hostname = "tb.local"
       centos72.vm.synced_folder ".", "/vagrant"
       centos72.vm.network "forwarded_port", guest: 443, host: 4431
-      centos72.vm.network "private_network", ip: "192.168.33.11"
+      #centos72.vm.network "private_network", ip: "192.168.33.11"
+      centos72.vm.network "private_network", ip: "192.168.33.11" virtualbox__intnet: "intnet"
       centos72.vm.provider "virtualbox" do |vb|
           vb.name = "tb"
           vb.customize ["modifyvm", :id, "--memory", 3072]
@@ -25,7 +26,8 @@ Vagrant.configure(2) do |config|
       centos72.vm.hostname = "mdm1.local"
       centos72.vm.synced_folder ".", "/vagrant"
       centos72.vm.network "forwarded_port", guest: 6611, host: 6611
-      centos72.vm.network "private_network", ip: "192.168.33.12"
+      #centos72.vm.network "private_network", ip: "192.168.33.12"
+      centos72.vm.network "private_network", ip: "192.168.33.12" virtualbox__intnet: "intnet"
       centos72.vm.provider "virtualbox" do |vb|
           vb.name = "mdm1"
 	  vb.customize ["modifyvm", :id, "--memory", 2024]
@@ -39,7 +41,8 @@ Vagrant.configure(2) do |config|
       centos72.vm.hostname = "mdm2.local"
       centos72.vm.synced_folder ".", "/vagrant"
       centos72.vm.network "forwarded_port", guest: 6611, host: 6612
-      centos72.vm.network "private_network", ip: "192.168.33.13"
+      #centos72.vm.network "private_network", ip: "192.168.33.13"
+      centos72.vm.network "private_network", ip: "192.168.33.13" virtualbox__intnet: "intnet"
       centos72.vm.provider "virtualbox" do |vb|
           vb.name = "mdm2"
           vb.customize ["modifyvm", :id, "--memory", 1024]
