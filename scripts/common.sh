@@ -9,6 +9,7 @@ instlog="/home/vagrant/install.log"
 ## Disable firewalld
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
+echo "=== Notice! Firewall service has been disabled. ==="
 echo "`date` Stopped and disabled firewall service " >> $instlog
 
 ## Add yum repo
