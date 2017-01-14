@@ -22,7 +22,7 @@ Using command below, three VMs(RedHat7.2) will be created.
 If you want to create those VMs quickly, dowonload "ScaleIO Linux" file from [here](https://www.emc.com/products-solutions/trial-software-download/scaleio.htm). Then save the file into the directory "scaleio2.0-rexray". After that, execute command below.  
 
 3. `vagrant up`  
-4. Open Web Browser on your VirualBox host. Then access to ScaleIO Install Manager(IM) at "https://127.0.0.1:6611" (User:admin, Password:Password123!). 
+4. Open Web Browser on your VirualBox host. Then access to ScaleIO Install Manager(IM) at "https://127.0.0.1:4431" (User:admin, Password:Password123!). 
 5. After logged into the IM, upload rpm package files of ScaleIO from `scaleio\ScaleIO_2.0.1.2_Complete_Linux_SW_Download\ScaleIO_2.0.1.2_RHEL_OEL7_Download` and upload a configuration file `ScaleIO_3Nodes_Config.csv`. Proceed ScaleIO installation using IM. Make sure push "Mark Complete" bottan after the installation completed.
   
 After ScaleIO installation complete, login to the each of VMs. Then execute command below.
