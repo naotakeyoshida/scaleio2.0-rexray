@@ -27,10 +27,7 @@ sudo unzip -n /vagrant/ScaleIO_Linux_v2.0.zip -d /vagrant/scaleio/
 sudo systemctl restart network
 
 echo "`date` ScaleIO GW-IM was installed " >> $instlog
-echo "================================================="
-echo "====== Installation for TB complete!       ======"
-echo "====== You can access ScaleIO IM from host ======" 
-echo "====== URL https://127.0.0.1:4431          ======"
-echo "====== Login User=admin, PW=Password123!   ======"
-echo "================================================="
+echo "==========================================="
+echo "====== Installation for TB complete! ======"
+echo "==========================================="
 echo "`date`" > /home/vagrant/complete
