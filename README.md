@@ -18,8 +18,7 @@ Using command below, three VMs(RedHat7.2) will be created.
 1. `git clone https://github.com/naotakeyoshida/scaleio2.0-rexray.git`  
 2. `cd scaleio2.0-rexray`  
   
-If you want to install quickly, dowonload "ScaleIO 2.0" file from here. Then save the file into the directory "scaleio2.0-rexray". After that, execute command below.
-  
+If you want to install quickly, dowonload "ScaleIO 2.0" file from here. Then save the file into the directory "scaleio2.0-rexray". After that, execute command below.  
 3. `vagrant up`  
   
   
