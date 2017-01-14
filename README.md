@@ -5,11 +5,16 @@ You can configure [ScaleIO](https://japan.emc.com/storage/scaleio/index.htm) on 
 ## Description
 ScaleIO is a product of Software-Defined Strage released by DellEMC.
 
+
 ## Requirement
-TBD
+*Vagrant
+*VirtualBox
+*VirtualBox Host Memory: over 3GB
+
 
 ## Usage
 TBD
+
 
 ## Author
 naotakeyoshida
