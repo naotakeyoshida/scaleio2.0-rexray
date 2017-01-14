@@ -30,7 +30,12 @@ After ScaleIO installation complete, login to the each of VMs. Then execute comm
 6. `vagrant ssh tb`
 7. `[tb]$ sudo /vagrant/tb.sh`
 8. `exit`
-9. Repeat this operation for rest of VMs(mdm1 and mdm2)
+9. `vagrant ssh mdm1`
+10. `[mdm1]$ sudo /vagrant/mdm1.sh`
+11. `exit`
+12. `vagrant ssh mdm2`
+13. `[mdm2]$ sudo /vagrant/mdm2.sh`
+14. `exit`
   
 ## Author
 naotakeyoshida
