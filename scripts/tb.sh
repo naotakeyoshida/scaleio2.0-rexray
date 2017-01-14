@@ -16,7 +16,7 @@ if [ -e "/vagrant/ScaleIO_Linux_v2.0.zip" ]; then
 else
     echo "`date` ScaleIO will be downloaded " >> $instlog
     echo "========== `date` =========="
-    echo "ScaleIO is beeing downloaded. Please wait..."
+    echo "ScaleIO (1.6GB) is beeing downloaded. Please wait..."
     echo "It will take over 10 min."
     sudo wget -nv http://downloads.emc.com/emc-com/usa/ScaleIO/ScaleIO_Linux_v2.0.zip
     echo "`date` Download complete " >> $instlog
