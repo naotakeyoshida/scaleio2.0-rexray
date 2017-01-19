@@ -70,5 +70,5 @@ sudo service rexray restart
 sudo service rexray status
 sudo service docker restart
 echo "======================================================"
-echo "====== Docker and RexRay installation complete! ======"
+echo "====== Docker and REX-Ray installation complete! ======"
 echo "======================================================"
