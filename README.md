@@ -29,13 +29,13 @@ After ScaleIO installation complete, login to the each of VMs. Then execute few 
   
 6. `vagrant ssh tb`
 7. `[tb]$ sudo /vagrant/scripts/rexray.sh`
-8. `exit`
+8. `[tb]$ exit`
 9. `vagrant ssh mdm1`
 10. `[mdm1]$ sudo /vagrant/scripts/rexray.sh`
-11. `exit`
+11. `[mdm1]$ exit`
 12. `vagrant ssh mdm2`
 13. `[mdm2]$ sudo /vagrant/scripts/rexray.sh`
-14. `exit`
+14. `[mdm2]$ exit`
   
 ## Author
 naotakeyoshida
