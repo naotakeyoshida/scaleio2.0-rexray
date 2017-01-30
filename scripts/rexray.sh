@@ -24,7 +24,7 @@ echo "Docker installation complete!"
 pdomain="pdomain1"
 stpool="pool1"
 sysname="scaleio"
-endpoint="https://192.168.33.11/api"
+endpoint="https://192.168.33.12/api"
 password="Password123!"
 thin="ThinProvisioned"
 pmdm=`scli --login --mdm_ip 192.168.33.13 --username admin --password "Password123!" --approve_certificate`
