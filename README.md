@@ -28,13 +28,13 @@ If you want to create those VMs quickly, dowonload "ScaleIO Linux" file from [he
 After ScaleIO installation complete, login to the each of VMs. Then execute few commands below.
   
 6. `vagrant ssh tb`
-7. `[tb]$ sudo /vagrant/scripts/rexray.sh`
+7. `[tb]$ sudo /vagrant/scripts/rexray-tb.sh`
 8. `[tb]$ exit`
 9. `vagrant ssh mdm1`
-10. `[mdm1]$ sudo /vagrant/scripts/rexray.sh`
+10. `[mdm1]$ sudo /vagrant/scripts/rexray-mdm.sh`
 11. `[mdm1]$ exit`
 12. `vagrant ssh mdm2`
-13. `[mdm2]$ sudo /vagrant/scripts/rexray.sh`
+13. `[mdm2]$ sudo /vagrant/scripts/rexray-mdm.sh`
 14. `[mdm2]$ exit`
   
 ## Author
