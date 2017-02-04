@@ -84,4 +84,4 @@ tokenfile=`sed -n 4p /vagrant/token.txt`
 token=`echo "$tokenfile" | cut -d' ' -f6`
 master=192.168.33.11:2377
 docker swarm join --token $token $master
-echo "========================================="
+echo "==========================================="
