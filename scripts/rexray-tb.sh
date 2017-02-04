@@ -34,7 +34,7 @@ else
   mdmip="192.168.33.12"
 fi
 echo "========================================"
-echo "===== Primary MDM is $mdmip ====="
+echo " Primary MDM is $mdmip "
 echo "========================================"
 scli --login --mdm_ip $mdmip --username admin --password $password --approve_certificate
 output=`scli --mdm_ip $mdmip --query_all |grep Name`
@@ -69,6 +69,16 @@ echo "`date` RexRay was installed and configured " >> $instlog
 sudo service rexray restart
 sudo service rexray status
 sudo service docker restart
-echo "======================================================"
-echo "====== Docker and REX-Ray installation complete! ======"
-echo "======================================================"
+echo "==========================================="
+echo " Docker and REX-Ray installation complete! "
+echo "==========================================="
+
+## Initial setup of Swarm
+echo "Docker Swarm initialized..."
+echo "  "
+master=192.168.33.11
+docker swarm init --listen-addr $master:2377 --advertise-addr $master
+docker swarm join-token worker > /vagrant/token.txt
+echo "==========================="
+echo " This node set as a master."
+echo "==========================="
