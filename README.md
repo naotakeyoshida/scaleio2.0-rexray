@@ -4,19 +4,19 @@ You can try [ScaleIO](https://japan.emc.com/storage/scaleio/index.htm) on Virtua
   
   
 ## Description
-With this scripts, three VMs will be deployed. Those VMs will be configured as a cluster by Swarm mode. ScaleIO which is a product of Software-Defined Strage released by DellEMC will provide block storage service for Docker. REX-Ray, running as a volume plugin, will be an end point of storage control for Docker and Swarm. Configurations of each VM are listed below.
+With this scripts, three VMs will be deployed. Those VMs will be configured as a cluster "swarm mode". ScaleIO which is a product of Software-Defined Strage released by DellEMC will provide block storage service for Docker. REX-Ray, running as a volume plugin, will be an end point of storage control for Docker and Swarm. Configurations of each VM are listed below.
 
 Host name : tb 
 - IP address : 192.168.33.11
-- Software : Docker, Swarm (Master & Worker), ScaleIO (Tie-Breaker), REX-Ray
+- Software : Docker with swarm mode (Manager & Worker), ScaleIO (Tie-Breaker), REX-Ray
 
 Host name : mdm1
 - IP address : 192.168.33.12
-- Software : Docker, Swarm (Worker), ScaleIO (MDM), REX-Ray
+- Software : Docker with swarm mode (Worker), ScaleIO (MDM), REX-Ray
 
 host name : mdm2
 - IP address : 192.168.33.13
-- Software : Docker, Swarm (Master), ScaleIO (MDM), REX-Ray 
+- Software : Docker with swarm mode (Master), ScaleIO (MDM), REX-Ray 
   
   
 ## Requirement
