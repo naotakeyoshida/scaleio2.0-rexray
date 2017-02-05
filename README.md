@@ -16,7 +16,7 @@ Host name : mdm1
 
 host name : mdm2
 - IP address : 192.168.33.13
-- Software : Docker with swarm mode (Master), ScaleIO (MDM), REX-Ray 
+- Software : Docker with swarm mode (Worker), ScaleIO (MDM), REX-Ray 
   
   
 ## Requirement
