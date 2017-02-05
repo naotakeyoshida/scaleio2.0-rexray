@@ -76,9 +76,9 @@ echo "==========================================="
 ## Initial setup of Swarm
 echo "Docker Swarm initialized..."
 echo "  "
-master=192.168.33.11
-docker swarm init --listen-addr $master:2377 --advertise-addr $master
+manager=192.168.33.11
+docker swarm init --listen-addr $manager:2377 --advertise-addr $manager
 docker swarm join-token worker > /vagrant/token.txt
-echo "==========================="
-echo " This node set as a master."
-echo "==========================="
+echo "============================"
+echo " This node set as a manager."
+echo "============================"
