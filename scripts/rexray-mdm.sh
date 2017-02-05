@@ -77,11 +77,11 @@ echo "==========================================="
 if [ -e "/vagrant/token.txt" ]; then
     :
 else
-    echo "You must execute 'docker swarm join-token worker > /home/vagrant/token.txt' command on the master node."
+    echo "You must execute 'docker swarm join-token worker > /home/vagrant/token.txt' command on the manager node."
     exit 0
 fi
 tokenfile=`sed -n 4p /vagrant/token.txt`
 token=`echo "$tokenfile" | cut -d' ' -f6`
-master=192.168.33.11:2377
-docker swarm join --token $token $master
+manager=192.168.33.11:2377
+docker swarm join --token $token $manager
 echo "==========================================="
