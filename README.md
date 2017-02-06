@@ -35,7 +35,7 @@ If you want to create those VMs quickly, dowonload "ScaleIO Linux" file from [he
 
 3. `vagrant up`  
 4. Open Web Browser on your VirualBox host. Then access to ScaleIO Install Manager(IM) at "https://127.0.0.1:4431" (User:admin, Password:Password123!). 
-5. After logged into the IM, upload rpm package files of ScaleIO from `scaleio\ScaleIO_2.0.1.2_Complete_Linux_SW_Download\ScaleIO_2.0.1.2_RHEL_OEL7_Download` and upload a configuration file `ScaleIO_3Nodes_Config.csv`. Proceed ScaleIO installation using IM. Make sure push "Mark Complete" button after the installation completed.
+5. After logged in to the IM, upload rpm package files of ScaleIO from `scaleio\ScaleIO_2.0.1.2_Complete_Linux_SW_Download\ScaleIO_2.0.1.2_RHEL_OEL7_Download` and upload a configuration file `ScaleIO_3Nodes_Config.csv`. Proceed ScaleIO installation using IM. Make sure push "Mark Complete" button after the installation completed.
   
 After ScaleIO installation complete, login to the each of VMs. Then execute few commands below.
   
