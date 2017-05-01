@@ -20,7 +20,8 @@ host name : mdm2
   
   
 ## Requirement
-* Vagrant 
+* Vagrant
+* git
 * VirtualBox
 * VirtualBox Host Memory: over 3GB
   
@@ -48,6 +49,9 @@ After ScaleIO installation complete, login to the each of VMs. Then execute few 
 12. `vagrant ssh mdm2`
 13. `[mdm2]$ sudo bash /vagrant/scripts/rexray-mdm.sh`
 14. `[mdm2]$ exit`
-  
+
+Now you can use Docker and REX-Ray commands.
+
+
 ## Author
 naotakeyoshida
